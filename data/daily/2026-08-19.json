@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-19",
+  "symbol": "SPX",
+  "spot": 7691.7598,
+  "net_gex_dollars": -6817963212.663169,
+  "zero_gamma_flip": 7672.828919126882,
+  "call_wall": 7900.0,
+  "put_wall": 7500.0,
+  "vol_trigger": 7722.843066852891,
+  "abs_gamma_strike": 8000.0,
+  "gamma_regime": "neutral",
+  "oi_settle_date": "2026-08-18",
+  "contracts_analyzed": 21086
+}
