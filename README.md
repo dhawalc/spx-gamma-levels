@@ -1,4 +1,4 @@
-# SPX Dealer Gamma Levels — Open Dataset
+# SPX Dealer Gamma Levels: Open Dataset
 
 Daily dealer gamma exposure levels for the S&P 500 index (SPX), computed from
 the full options chain and published as CSV and JSON.
@@ -32,7 +32,7 @@ machine-readable fact sheet at
 | `put_wall` | Strike below spot with the largest negative put gamma |
 | `vol_trigger` | Lowest positive-gamma strike between the walls |
 | `abs_gamma_strike` | Strike with the most total gamma, ignoring sign |
-| `gamma_regime` | `positive`, `negative`, or `neutral` — see below |
+| `gamma_regime` | `positive`, `negative`, or `neutral` (see below) |
 | `oi_settle_date` | Settlement date of the open interest used |
 | `contracts_analyzed` | Chain rows that went into the calculation |
 
@@ -54,21 +54,21 @@ a function of spot.
 
 **Dealer positioning is an assumption, not an observation.** Open interest
 records that a contract exists. It never records which side a dealer holds.
-Every gamma figure published anywhere — this dataset, and every commercial
-vendor's — inherits that assumption. Treat these levels as a map of where
+Every gamma figure published anywhere, including this dataset and every commercial
+vendor's, inherits that assumption. Treat these levels as a map of where
 hedging pressure would concentrate *if the standard convention holds*, not as
 a record of anyone's actual book.
 
 **`gamma_regime` is reconciled, and sometimes that means "neutral".** The
 regime can be derived two ways: from which side of the zero-gamma flip spot
 sits, and from the sign of net GEX. Across this series they disagree on about
-one session in seven, and the disagreements share a signature — spot within
+one session in seven, and the disagreements share a signature: spot within
 roughly 0.2% of the flip, with net GEX small relative to a typical day. That
 is not a defect in either method; it is what two estimates of the same
 near-zero quantity do near the root.
 
 When they disagree, this dataset publishes `neutral` rather than picking a
-side. `neutral` here means *spot is sitting on the flip* — the least stable of
+side. `neutral` here means *spot is sitting on the flip*, the least stable of
 the three states, where a small move in spot can change which way hedging flow
 pushes. It does not mean "no information".
 
@@ -132,7 +132,7 @@ indexes the full corpus, and every page is available as markdown by appending
 
 Data is released under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it freely,
-including commercially — please attribute **SquawkFlow
+including commercially. Please attribute **SquawkFlow
 (https://squawkflow.com)** and link back.
 
 Levels are recomputed every session. A number without its date is wrong within
