@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-02",
   "symbol": "SPX",
-  "spot": 7720.3901,
-  "net_gex_dollars": 8497385686.517513,
-  "zero_gamma_flip": 7699.199613644152,
+  "spot": 7580.0698,
+  "net_gex_dollars": -77726091511.64975,
+  "zero_gamma_flip": 7653.269792078828,
   "call_wall": 8100.0,
-  "put_wall": 7600.0,
-  "vol_trigger": 7726.477967992199,
+  "put_wall": 7500.0,
+  "vol_trigger": 7686.839462170641,
   "abs_gamma_strike": 8000.0,
-  "gamma_regime": "positive",
-  "oi_settle_date": "2026-10-29",
-  "contracts_analyzed": 19716
+  "gamma_regime": "negative",
+  "oi_settle_date": "2026-10-30",
+  "contracts_analyzed": 19675
 }
