@@ -1090,5 +1090,19 @@
     "gamma_regime": "neutral",
     "oi_settle_date": "2026-11-11",
     "contracts_analyzed": 21594
+  },
+  {
+    "date": "2026-11-13",
+    "symbol": "SPX",
+    "spot": 7592.3999,
+    "net_gex_dollars": -34545152512.47782,
+    "zero_gamma_flip": 7593.461733977861,
+    "call_wall": 8100.0,
+    "put_wall": 7500.0,
+    "vol_trigger": 7625.194810431804,
+    "abs_gamma_strike": 8000.0,
+    "gamma_regime": "negative",
+    "oi_settle_date": "2026-11-12",
+    "contracts_analyzed": 21359
   }
 ]
